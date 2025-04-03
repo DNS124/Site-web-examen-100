@@ -7,3 +7,6 @@ Available Pages:
 Home: The main page providing an introduction to the application.
 Destinations: A gallery of images featuring various travel destinations. Users can add or remove destinations from their Favorites.
 Favorites: A list of all previously saved destinations.
+
+
+Link to Netlify: https://travelvistadns.netlify.app/
