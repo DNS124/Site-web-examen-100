@@ -1,0 +1,35 @@
+:root {
+    --bg-primary: #80CBC4;
+    --bg-secondary: #B4EBE6;
+    --bg-dark: #FBF8EF;
+
+    --fs-xl: 30px;
+    --fs-large: 24px;
+    --fs-medium: 16px;
+    --fs-small: 12px;
+}
+
+.favoritepg {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.favoritepg .destination-table img {
+    opacity: 1;
+}
+
+.favoritepg .favorite-gallery p {
+    font-family: var(--fs-medium);
+    margin-top: 45px;
+}
+
+@media (max-width: 768px) {
+    .favorite-gallery .destination-table img {
+        height: 300px;
+        width: 400px;
+    }
+}

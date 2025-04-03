@@ -1,0 +1,517 @@
+:root {
+    --bg-primary: #80CBC4;
+    --bg-secondary: #B4EBE6;
+    --bg-dark: #FBF8EF;
+
+    --fs-xl: 30px;
+    --fs-large: 24px;
+    --fs-medium: 16px;
+    --fs-small: 12px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+hr {
+    color: aqua;
+    background-color: aqua;
+    height: 2px;
+}
+
+.banner {
+    height: 90vh;
+    background-image: url('../images/background-image6.jpg');
+    background-position: 0;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 0 0 12%;
+}
+
+header {
+    background-color: black;
+    height: 100px;
+    position: sticky;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    margin-right: 10%;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-link a {
+    color: white;
+    text-decoration: none;
+    font-size: var(--fs-large);
+}
+
+.nav-link a:hover {
+    color: aqua;
+}
+
+.title {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.banner-text {
+    margin-top: 60px;
+    font-size: var(--fs-xl);
+    color: white;
+
+}
+
+.baner-text {
+    margin-top: 80px;
+    font-size: 90px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.title a {
+    border-radius: 5%;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    font-size: var(--fs-large);
+    padding: 10px 20px;
+}
+
+.title a:hover {
+    background-color: black;
+    color: aqua;
+}
+
+.about {
+    font-size: var(--fs-large);
+    text-align: center;
+    width: 60%;
+    padding: 5%;
+    margin-left: 15%;
+}
+
+.best-destinations {
+    background-color: var(--bg-dark);
+}
+
+.best-destinations h2 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.best-destinations .dest-img h2 {
+    padding-top: 10px;
+}
+
+.best-destinations p {
+    text-align: center;
+}
+
+.best-destinations .dest-img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5%;
+}
+
+.best-destinations .dest-img img {
+    height: 250px;
+    width: 400px;
+    margin: 20px 20px;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.dest-img .dit {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dest-img .dist {
+    margin: 30px 20px;
+}
+
+
+#map {
+    background-color: var(--bg-dark);
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.gallery {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gallery-text h2 {
+    width: 40%;
+    margin-left: 10%;
+    font-size: var(--fs-large);
+    font-weight: 100;
+}
+
+.gallery-text p {
+    width: 40%;
+    margin: 6% 0 2% 50%;
+    font-size: var(--fs-large);
+}
+
+.gallery-table .gt {
+    margin: 10px 10px;
+}
+
+.gallery-table img {
+    height: 350px;
+    width: 450px;
+    opacity: 0.4;
+}
+
+.gallery-table img:hover {
+    opacity: 1;
+}
+
+.gallery .gallery-table {
+    background-color: black;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+    height: 80px;
+    width: 80px;
+}
+
+
+footer {
+    background-image: url('../images/btmimg.jpg');
+    background-position: 0;
+    height: 350px;
+}
+
+.bgim {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 300px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .bgim .footer-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 30%;
+    margin-left: 15%;
+    align-items: left;
+    justify-content: center;
+}
+
+footer .bgim .footer-container a {
+    font-size: var(--fs-large);
+    border-radius: 5%;
+    height: 40px;
+    width: 120px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer .bgim .footer-container a:hover {
+    background-color: black;
+    color: aqua;
+}
+
+footer .bgim .footer-container p {
+    text-align: left;
+    width: 60%;
+    font-size: var(--fs-large);
+}
+
+footer .bgim .footer-container1 {
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 15%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .bgim .footer-container1 p {
+    text-align: left;
+    width: 60%;
+    font-size: var(--fs-large);
+}
+
+.footer-container1 .sp {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-container1 .sp a {
+    font-size: 40px;
+}
+
+footer .tag {
+    font-size: var(--fs-medium);
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    display: flex;
+    width: 100%;
+}
+
+
+/* ------------------------------Media Q---------------------------- */
+
+/* @media (max-width: 992px) {
+    .banner .nav-link a {
+        font-size: var(--fs-xl);
+        margin-right: 25px;
+    }
+
+    header .logo {
+        height: 90px;
+        width: 90px;
+    }
+
+    .title h2 {
+        font-size: var(--fs-xl);
+    }
+
+    .title h1 {
+        font-size: var(--fs-xl);
+    }
+
+    .title a {
+        font-size: var(--fs-large);
+    }
+
+    .about p {
+        font-size: var(--fs-medium);
+    }
+
+    .best-destinations h2 {
+        font-size: var(--fs-large);
+        padding-top: 10px;
+    }
+
+    .best-destinations p {
+        font-size: var(--fs-medium);
+    }
+
+    .gallery .gallery-text h2 {
+        font-size: var(--fs-medium);
+        font-weight: 100;
+    }
+
+    .gallery .gallery-text p {
+        font-size: var(--fs-medium);
+    }
+
+
+    footer .bgim .footer-container a {
+        font-size: var(--fs-medium);
+        height: 30px;
+        width: 80px;
+        padding-top: 10px;
+    }
+
+    footer .bgim .footer-container p {
+        font-size: var(--fs-medium);
+        width: 90%;
+    }
+
+    footer .bgim .footer-container1 p {
+        font-size: var(--fs-medium);
+        width: 90%;
+    }
+} */
+
+@media (max-width: 768px) {
+    .banner .nav-link a {
+        font-size: var(--fs-large);
+        margin-right: 25px;
+    }
+
+    header .logo {
+        height: 90px;
+        width: 90px;
+    }
+
+    .title h2 {
+        font-size: var(--fs-large);
+    }
+
+    .title h1 {
+        font-size: var(--fs-xl);
+    }
+
+    .title a {
+        font-size: var(--fs-large);
+    }
+
+    .about p {
+        font-size: var(--fs-medium);
+    }
+
+    .best-destinations h2 {
+        font-size: var(--fs-large);
+        padding-top: 10px;
+    }
+
+    .best-destinations p {
+        font-size: var(--fs-medium);
+    }
+
+    .gallery .gallery-text h2 {
+        font-size: var(--fs-medium);
+        font-weight: 100;
+    }
+
+    .gallery .gallery-text p {
+        font-size: var(--fs-medium);
+    }
+
+
+    footer .bgim .footer-container a {
+        font-size: var(--fs-medium);
+        height: 30px;
+        width: 80px;
+        padding-top: 10px;
+    }
+
+    footer .bgim .footer-container p {
+        font-size: var(--fs-medium);
+        width: 90%;
+    }
+
+    footer .bgim .footer-container1 p {
+        font-size: var(--fs-medium);
+        width: 90%;
+    }
+
+    .footer-container1 .sp a {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 655px) {
+    .banner .nav-link a {
+        font-size: var(--fs-medium);
+        margin-right: 15px;
+    }
+
+    header .logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .title h2 {
+        font-size: var(--fs-medium);
+    }
+
+    .title h1 {
+        font-size: var(--fs-large);
+    }
+
+    .title a {
+        font-size: var(--fs-medium);
+    }
+
+    .about p {
+        font-size: var(--fs-small);
+    }
+
+    .best-destinations h2 {
+        font-size: var(--fs-medium);
+        padding-top: 10px;
+    }
+
+    .best-destinations p {
+        font-size: var(--fs-small);
+    }
+
+    .gallery .gallery-text h2 {
+        font-size: var(--fs-small);
+        font-weight: 100;
+    }
+
+    .gallery .gallery-text p {
+        font-size: var(--fs-small);
+    }
+
+    .gallery .gallery-table .gt img {
+        height: 300px;
+        width: 400px;
+    }
+
+    footer .bgim .footer-container a {
+        font-size: var(--fs-medium);
+        height: 20px;
+        width: 80px;
+        padding-bottom: 8px;
+    }
+
+    footer .bgim .footer-container p {
+        font-size: var(--fs-small);
+        width: 90%;
+    }
+
+    footer .bgim .footer-container1 p {
+        font-size: var(--fs-small);
+        width: 90%;
+    }
+
+    .footer-container1 .sp a {
+        font-size: 20px;
+    }
+
+    footer .tag {
+        font-size: var(--fs-small);
+    }
+}

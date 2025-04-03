@@ -1,0 +1,97 @@
+:root {
+    --bg-primary: #80CBC4;
+    --bg-secondary: #B4EBE6;
+    --bg-dark: #FBF8EF;
+
+    --fs-xl: 30px;
+    --fs-large: 24px;
+    --fs-medium: 16px;
+    --fs-small: 12px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.destination {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.destination .destination-table .pc h2 {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: var(--fs-large);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.destination .destination-table p {
+    text-align: center;
+    padding-top: 40px;
+    font-size: var(--fs-large);
+}
+
+.destination-table .pc {
+    margin: 10px 10px;
+}
+
+.destination-table img {
+    height: 350px;
+    width: 450px;
+    opacity: 0.4;
+}
+
+.destination-table img:hover {
+    opacity: 1;
+}
+
+.destination .destination-table {
+    background-color: black;
+    padding: 5% 2% 4% 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.destination .favorite-button {
+    align-items: center;
+    background-image: radial-gradient(100% 100% at 100% 0, rgb(0, 235, 235) 0, #3091ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    height: 35px;
+    justify-content: center;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.destination .favorite-button:hover {
+    color: aqua;
+    background-image: radial-gradient(100% 100% at 100% 0, rgb(0, 168, 168) 0, #2864a8 100%);
+}
+
+@media (max-width: 768px) {
+    .destination .destination-table img {
+        height: 300px;
+        width: 400px;
+    }
+}
